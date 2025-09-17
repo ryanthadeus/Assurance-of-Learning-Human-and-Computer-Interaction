@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    align-items: center;
+    background-color: #1A1D2C;
+    margin: 0;
+    color: azure;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+nav{
+    z-index: 20;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 204, 8%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+nav ul li{
+    padding: 0 70px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+a{
+    color: azure;
+    text-decoration: none;
+}
+
+nav h1{
+    color: #ED215D;
+    font-size: 40px;
+}
+
+nav ul li:hover{
+    color: #ED215D;
+    opacity: 1;
+}
+.nav-item.active {
+    color: #ED215D;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #121420;
+    height: 400px;
+    width: 100%;
+    justify-content: space-between;
+}
+footer ul > *{
+    display: flex;
+    list-style-type: none;
+}
+.list-socmed p{
+    margin-left: 20px;
+}
+footer ul li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer ul li img{
+    width: 34px;
+    height: 34px;
+    object-fit: fill;
+}
+.is-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 40px;
+    border-bottom: solid azure;
+    border-width: 3px;
+}
+.footer-icon {
+    width: 200px;
+    height: 200px;
+
+}
+.email-footer input{
+    width: 250px;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+}
+.email-footer .submit-button{
+    width: 100px;
+    height: 52px;
+    padding: 0;
+    background-color: #ED215D;
+    border-radius: 0 30px 30px 0;
+    margin-left: -4px;
+}
+.copyrights{
+    padding: 0 0 20px 40px;
+    opacity: 0.7;
+}
+
+.hamburger .line{
+    width: 50px;
+    height: 4px;
+    background: azure;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+@media (max-width : 768px) {
+    #nav-desktop h1{
+        font-size: 30px;
+    }
+    #nav-desktop ul li{
+        font-size: 18px;
+        padding: 0 0 0 40px;
+    }
+    #nav-desktop ul{
+        padding: 0;
+    }
+    .is-footer .icon{
+        display: none;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="../style/navbar-y-footer.css">
+    <link rel="stylesheet" href="../style/register.css">
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons.png">
+</head>
+<body>
+
+    <div class="register-home">
+        <div class="form-register">
+            <h1>Register Your Account</h1>
+            <form id="register" name="register">
+                <div class="input-form">
+                    <legend >Name</legend>
+                    <input name="name">
+                    <p class="err-message" id="name"></p>
+                </div>
+                <div class="input-form">
+                    <legend >Email</legend>
+                    <input name="email" type="text" name="" id="">
+                    <p class="err-message" id="email"></p>
+                </div>
+                <div class="input-form">
+                    <legend >Age</legend>
+                    <input name="age" type="text" name="" id="">
+                    <p class="err-message" id="age"></p>
+                </div>
+                <div class="radio-form">
+                    <div style="display: flex; flex-direction: row; align-items: center;">
+                        <legend>Gender</legend>
+                        <p style="margin: 0;" class="err-message" id="gender"></p>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="gender" value="lanang">
+                        <label for="gender">lanang</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="gender" value="wadon">
+                        <label for="gender">wadon</label>
+                    </div>
+                </div>
+                <div class="input-form">
+                    <legend for="pw">Password</legend>
+                    <input type="password" name="pw" id="pwd">
+                    <p class="err-message" id="password"></p>
+                </div>
+                <div class="input-form">
+                    <legend for="pw">Confirm Password</legend>
+                    <input type="password" name="confirm">
+                </div>
+                <button class="sub-button" type="submit" onclick="submitForm()">Go</button>
+            </form>
+        </div>
+        <img class="img-register" src="../assets/icons.png" alt="">
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>

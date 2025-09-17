@@ -1,0 +1,35 @@
+.detail-content{
+    display: flex;
+    flex-direction: column;
+    margin: 140px 40px;
+    width: 100%;
+    align-items: center;
+}
+.content-information{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.content-information p{
+    border-width: 1px;
+    margin: 0 40px;
+    padding-bottom: 20px;
+}
+.content-information > * {
+    margin: 0;
+}
+.song-info{
+    text-align: start;
+    align-self: start;
+}
+.song-info ul li{
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.about-content{
+    font-size: 17px;
+    padding: 0 40px;
+}

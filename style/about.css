@@ -1,0 +1,74 @@
+.about-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.about-content img{
+    width: inherit;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.content-text.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-header{
+    padding-top: 120px;
+    flex-direction: row; 
+    display: flex; 
+    align-self: center;
+}
+.about-text h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.about-text a{
+    margin: 20px 0;
+    color: #ED215D;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.vision-mission{
+    display: flex;
+    flex-direction: row;
+}
+.vismis-content h1{
+    color: #ED215D;
+}
+.vismis-content{
+    width: 400px;
+    padding: 0 20px;
+}
+.vismis-content ul{
+    margin-left: -30px;
+}
+@media (max-width: 768px) {
+    .about-text{
+        width: 500px;
+    }
+    .vision-mission{
+        width: 750px;
+    }
+}
